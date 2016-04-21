@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/nbproject/private/
+/unt_cz/nbproject/private/
+/unt_cz_nette/nbproject/private/
