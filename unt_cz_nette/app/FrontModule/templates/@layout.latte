@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" href="{$basePath}/favicon.ico?v=102"> 
+  <link rel="icon" type="image/x-icon" href="{$basePath}/favicon.ico?v=102">
+  <meta name="author" content="petrsyrny.cz">  
+  <!-- CSS -->              
+  <link href='https://fonts.googleapis.com/css?family=Anaheim:200,300,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{$basePath}/css/bootstrap-cdmod.css">
+  <link rel="stylesheet" href="{$basePath}/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{$basePath}/css/linearicons.css">
+  <link rel="stylesheet" href="{$basePath}/css/main.css?v=100">
+  <!-- IE fixes -->  
+    <!--[if gt IE 8]>
+      <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <![endif]--> 
+  
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/aax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->    
+  
+  <title>UNT - Home page | v100</title>      
+</head>
+<body class="page page-home">
+  <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+  <!-- ========================================================================= header  -->
+
+  <header id="body_header" class="cbgcol-white">   
+    <div id="body_header_top" class="cbgcol-lgray ccol-gray">
+      <div class="container">  
+        <div class="clearfix">  
+          <a href="#mail" class="block pull-left ccol-gray"><span><i class="lnr lnr-envelope"></i> přihlásit do webmailu</span></a>
+          <div class="block pull-right"><span><i class="lnr lnr-phone-handset"></i> prodejna: <strong class="ccol-red">777 833 428</strong>  servis: <strong class="ccol-red">777 833 880</strong></span></div> 
+        </div>
+      </div>
+    </div>
+	{include '../templates/header-navigation.latte'}    
+  </header>
+      
+  <!-- ========================================================================= main  -->
+  
+  <main id="body_main">
+	{include content}
+  </main>
+      
+  <!-- ========================================================================= footer  -->
+  
+  <footer id="body_footer" class="cbgcol-dgray ccol-white">
+	{include '../templates/footer-navigation.latte'}    
+  </footer>
+  
+  <!-- ========================================================================= END  -->
+  <!-- Run scripts -->     
+  <script src="{$basePath}/js/jquery-1.11.3.min.js"></script>
+  <script src="{$basePath}/js/bootstrap.min.js"></script>  
+  <script src="{$basePath}/js/main.js?v=100"></script>
+             
+</body> 
+</html> 
