@@ -4,17 +4,16 @@
         <div class="col-xxs-12 col-xs-6 col-md-3 ">
           <h3>Internet</h3>
 		  <a n:href="Homepage:" n:class="$presenter->isLinkCurrent('Homepage:default') ? active" title="Internet pro domácnosti">Pro domácnosti</a>
-		  <a n:href="Profirmy:" n:class="$presenter->isLinkCurrent('Profirmy:') ? active" title="Internet pro frimy">Pro firmy</a>
-          <a href="#">Zařízení</a>
-          <a href="#">Instalace</a>
-          <a href="#">Rozhraní</a>
+		  <a n:href="Profirmy:" n:class="$presenter->isLinkCurrent('Profirmy:') ? active" title="Internet pro frimy a ISP">Pro firmy</a>
+          <a id="footer-link-zarizeni" n:href="Homepage:default#zarizeni" title="Zařízení pro rozvod internetu">Zařízení</a>
+          <a id="footer-link-instalace" n:href="Homepage:default#instalace" title="Instalace přípojky">Instalace</a>
         </div>
         <div class="col-xxs-12 col-xs-6 col-md-3 ">
           <h3>Internet TV</h3>
-          <a href="#">TV set-top-box</a>
-          <a href="#">TV Apple</a>
-          <a href="#">TV Android</a>
-          <a href="#">O sledování TV</a>
+          <a class="footer-internet-tv" n:href="Internettv:default#internet-tv" title="Internet TV set-top-box">TV set-top-box</a>
+          <a class="footer-internet-tv" n:href="Internettv:default#internet-tv" title="Internet TV Apple">TV Apple</a>
+          <a class="footer-internet-tv" n:href="Internettv:default#internet-tv" title="Internet TV Android">TV Android</a>
+          <a id="footer-sledovani-tv" n:href="Internettv:default#sledovani-tv" title="Internet TV - O sledování TV">O sledování TV</a>
         </div>
         <div class="col-xxs-12 col-xs-6 col-md-3 clear-xs ">
           <h3>Prodej a servis</h3>
@@ -39,10 +38,11 @@
       <div class="container">      
         <div class="clearfix">
           <div class="copyright pull-left">                                                                                                                       
-            <span>&copy; 2016 Ing. František Prachař</span>
+            <span>&copy; 2002 - <?php echo date('Y')?> Ing. František Prachař</span> |
+			<span>Created by - <a href="http://www.petrsyrny.cz" target='_blank' title='tvorba webů a webových aplikací Tábor'>PETRSYRNY.CZ</a></span>
           </div>   
           <div class="signature pull-right">  
-           <a href="#"></a> Webdesign RADIMSTOLINA.NET
+			  Webdesign <a href="http://www.radimstolina.net" target='_blank'>RADIMSTOLINA.NET</a> 
           </div>
         </div>
       </div>

@@ -74,7 +74,39 @@ $(document).ready(function(){
     return false; 
   } );
        
-       
-        
+
+/*proklik z kontentu, ktery nema odkazovat, ale je obaleny odkazem*/
+$('.stable').click(function(e) {
+  e.preventDefault();
+});
+
+/*srollovani pri kliknuti na footer linky*/
+//--- zarizeni
+  $('#footer-link-zarizeni').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#zarizeni").offset().top - 160
+   }, 500);
+  });     
+  
+//--- instalace
+  $('#footer-link-instalace').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#instalace").offset().top - 100
+   }, 500);
+  });       
+
+//--- internet TV
+  $('.footer-internet-tv').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#internet-tv").offset().top - 100
+   }, 500);
+  });      
+  
+//--- internet TV
+  $('#footer-sledovani-tv').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#sledovani-tv").offset().top - 160
+   }, 500);
+  });        
         
         

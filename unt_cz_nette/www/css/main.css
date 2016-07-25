@@ -1276,10 +1276,16 @@ input:-moz-placeholder { vertical-align: middle;color:#999; ;font-style: normal;
                
     }
       
-      .block-product h3{
+      .block-product h3 {
         position: relative;
         padding: 8px 0 0px;
       }
+	  
+	  .block-product h4	{
+        position: relative;
+        padding: 8px 0 8px 5px;		
+		font-weight: 600
+	  }  
              
       .block-product hr{
         margin-top: 10px;
@@ -1783,12 +1789,16 @@ a:visited,
 a:focus,
 a.active,
 a:active,
-a:hover
+a:hover,
+a.stable 
 {
   color:#E2000D;
-
 }
 
+a.stable:hover {
+  text-decoration: none;
+  cursor: default;
+}
 
     
 .ccol-blue
@@ -1914,4 +1924,24 @@ a:hover
  
 /* --------------------------------------------------------------------- Gradients */
 
+.fl-lft {float:left}
 
+.snippet-img-container {
+	height: 60px;      /* equals max image height */
+    width: auto;
+	float:left;
+    white-space: nowrap;
+	padding: 5px;
+	position: relative;
+}
+
+.snippet-img-container .snippet-img-helper {
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.snippet-img-container img {
+    vertical-align: middle;
+    max-height: 50px;
+}

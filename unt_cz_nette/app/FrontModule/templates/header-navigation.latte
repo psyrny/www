@@ -12,14 +12,14 @@
             <li>   
 			  <a n:href="Profirmy:" n:class="$presenter->isLinkCurrent('Profirmy:') ? active" title="Internet pro firmy">Pro firmy</a>
             </li>            
-            <li class="listitem-submenu">   
+            <li> <!-- class="listitem-submenu" -->
               <a n:href="Internettv:" n:class="$presenter->isLinkCurrent('Internettv:') ? 'ca-submenu active' : ca-submenu" title="Internet TV">Internet TV</a>
-              <ul class="list-unstyled list-submenu">
-                <li><a href="podstranka.html" class="" >TV set-top-box</a></li>
-                <li><a href="podstranka.html" class="" >TV Apple</a></li>
-                <li><a href="podstranka.html" class="" >TV Android</a></li>
-				<li><a href="podstranka.html" class="" >O sledování TV</a></li>
-              </ul>      
+              <!--<ul class="list-unstyled list-submenu">
+                <li><a n:href="Internettv:" class="" >TV set-top-box</a></li>
+                <li><a n:href="Internettv:" class="" >TV Apple</a></li>
+                <li><a n:href="Internettv:" class="" >TV Android</a></li>
+				<li><a n:href="Internettv:" class="" >O sledování TV</a></li>
+              </ul>-->      
             </li>            
             <li>   
 			  <a n:href="Prodejaservis:" n:class="$presenter->isLinkCurrent('Prodejaservis:') ? active" title="Prodej a servis">Prodej a servis</a>
