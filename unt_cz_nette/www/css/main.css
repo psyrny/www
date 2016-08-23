@@ -397,7 +397,7 @@ input:-moz-placeholder { vertical-align: middle;color:#999; ;font-style: normal;
         
         #body_header #nav-main-top .listitem-submenu:hover .list-submenu{
           display: block;
-          min-width: 130%;
+          min-width: 135%;
           padding: 10px;       
         }   
         
@@ -1925,6 +1925,8 @@ a.stable:hover {
 /* --------------------------------------------------------------------- Gradients */
 
 .fl-lft {float:left}
+.txt-standard {font-size: 132%; line-height: 124%;}
+
 
 .snippet-img-container {
 	height: 60px;      /* equals max image height */
@@ -1945,3 +1947,8 @@ a.stable:hover {
     vertical-align: middle;
     max-height: 50px;
 }
+
+.h-auto {height:auto !important}
+.height-auto {min-height: auto !important}
+.cl-red {color:#E2000D}
+.cl-text {color:#909090}

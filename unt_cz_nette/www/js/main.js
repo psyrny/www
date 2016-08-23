@@ -109,4 +109,33 @@ $('.stable').click(function(e) {
    }, 500);
   });        
         
-        
+// PRODEJ A SERVIS        
+  $('#header-pas-1, #footer-pas-1').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#pas-new-vt").offset().top - 160
+   }, 500);
+  });  		
+  
+  $('#header-pas-2, #footer-pas-2').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#pas-rep-vt").offset().top - 160
+   }, 500);
+  });  	
+  
+  $('#header-pas-3, #footer-pas-3').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#pas-servis").offset().top - 160
+   }, 500);
+  });  	
+  
+  $('#header-pas-4, #footer-pas-4').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#pas-ip-kamery").offset().top - 160
+   }, 500);
+  });   
+  
+  $('#header-pas-5, #footer-pas-5').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#pas-iq-dum").offset().top - 160
+   }, 500);
+  });     
