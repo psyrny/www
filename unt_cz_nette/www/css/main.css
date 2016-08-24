@@ -680,7 +680,7 @@ input:-moz-placeholder { vertical-align: middle;color:#999; ;font-style: normal;
 /****************************************************************************************** body_main */
    
 #body_main  {
-  position: relative
+  position: relative;
   z-index: 10;  
   padding-top: 180px;
   
@@ -896,7 +896,7 @@ input:-moz-placeholder { vertical-align: middle;color:#999; ;font-style: normal;
        
       #body_main_header figure {
         right: -145px;
-        top: -50px;
+        /*top: -50px;*/
       }
         
         #body_main_header figure img{

@@ -57,6 +57,60 @@
   <script src="{$basePath}/js/jquery-1.11.3.min.js"></script>
   <script src="{$basePath}/js/bootstrap.min.js"></script>  
   <script src="{$basePath}/js/main.js?v=100"></script>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=AIzaSyDNuBwgaHGVZwX2rU_PYfosFulSwLf8lp8" type="text/javascript"></script>		
+  <script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){
+	load();
+	}
+  );
+	function load() {
+	  if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map"));
+		map.setCenter(new GLatLng(49.4088753,14.6809138), 15);
+		map.addControl(new GSmallMapControl());
+		map.addControl(new GMapTypeControl());
+		//map.addControl(new GOverviewMapControl());
+
+		// Create a base icon for all of our markers that specifies the
+		// shadow, icon dimensions, etc.
+		var baseIcon = new GIcon();
+		baseIcon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+		baseIcon.iconSize = new GSize(20, 34);
+		baseIcon.shadowSize = new GSize(37, 34);
+		baseIcon.iconAnchor = new GPoint(9, 34);
+		baseIcon.infoWindowAnchor = new GPoint(9, 2);
+		baseIcon.infoShadowAnchor = new GPoint(18, 25);
+
+		// Creates a marker whose info window displays the letter corresponding
+		// to the given index.
+		function createMarker(point, index) {
+		  // Create a lettered icon for this point using our icon class
+		  var letter = 'Ing. František Prachař - UNT';
+		  var letteredIcon = new GIcon(baseIcon);
+		  letteredIcon.image = "http://www.google.com/mapfiles/marker.png";
+
+		  // Set up our GMarkerOptions object
+		  markerOptions = { icon:letteredIcon };
+		  var marker = new GMarker(point, markerOptions);
+
+		  GEvent.addListener(marker, "click", function() {
+			marker.openInfoWindowHtml("<b>" + letter + "</b>");
+		  });
+		  return marker;
+		}
+		// Add 10 markers to the map at random locations
+		var bounds = map.getBounds();
+		var southWest = bounds.getSouthWest();
+		var northEast = bounds.getNorthEast();
+		var lngSpan = northEast.lng() - southWest.lng();
+		var latSpan = northEast.lat() - southWest.lat();
+		var latlng = new GLatLng(49.4088753,14.6809138);
+		map.addOverlay(createMarker(latlng, 0));
+	  }
+	}
+  //]]>
+  </script>   	  
              
 </body> 
 </html> 

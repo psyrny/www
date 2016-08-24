@@ -3,11 +3,9 @@
 namespace App\FrontModule\Presenters;
 
 use Nette;
-use	App\Model;
-
 
 /**
- * Profirmy presenter.
+ * Kontakt presenter.
  */
 class KontaktPresenter extends BasePresenter {
 	

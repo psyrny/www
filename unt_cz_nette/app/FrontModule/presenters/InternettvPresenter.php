@@ -3,11 +3,9 @@
 namespace App\FrontModule\Presenters;
 
 use Nette;
-use	App\Model;
-
 
 /**
- * Profirmy presenter.
+ * InternetTV presenter.
  */
 class InternettvPresenter extends BasePresenter {
 	

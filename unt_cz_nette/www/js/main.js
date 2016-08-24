@@ -139,3 +139,25 @@ $('.stable').click(function(e) {
 	   scrollTop: $("#pas-iq-dum").offset().top - 160
    }, 500);
   });     
+  
+  // FOOTER INFO
+  $('#footer-kontakt-1').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#kontakt-1").offset().top - 160
+   }, 500);
+  });    
+  $('#footer-kontakt-2').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#kontakt-2").offset().top - 160
+   }, 500);
+  });    
+  $('#footer-kontakt-3').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#kontakt-3").offset().top - 160
+   }, 500);
+  });    
+  $('#footer-kontakt-4').click(function(e) {
+   $('html, body').animate({
+	   scrollTop: $("#kontakt-4").offset().top - 160
+   }, 500);
+  });      
