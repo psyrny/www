@@ -108,6 +108,7 @@ a,a:hover,a:active,a:focus {
 }
 
 .list-check > li,
+.list-check2 > li,
 p {    
   font-size: 116%;
   line-height: 120%;
@@ -162,6 +163,7 @@ hr {
   
     
 .list-check > li,
+.list-check2 > li,
   p { 
     font-size: 124%;  
     line-height: 120%;
@@ -183,6 +185,7 @@ hr {
     
       
 .list-check > li,
+.list-check2 > li,
   p { 
     font-size: 132%;  
     line-height: 124%;
@@ -1351,7 +1354,15 @@ input:-moz-placeholder { vertical-align: middle;color:#999; ;font-style: normal;
         
   .list-check {   
     padding: 27px 0 10px 0px;
+  }
   
+  .list-check2 {   
+    padding: 27px 0 10px 23px;
+  }  
+  
+  .list-check2 li ul {
+	padding: 10px 20px;
+	list-style-type: lower-alpha
   }
   
   .list-check > li{

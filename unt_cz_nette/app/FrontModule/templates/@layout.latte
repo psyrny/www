@@ -67,7 +67,7 @@
 	function load() {
 	  if (GBrowserIsCompatible()) {
 		var map = new GMap2(document.getElementById("map"));
-		map.setCenter(new GLatLng(49.4088753,14.6809138), 15);
+		map.setCenter(new GLatLng(49.4089106,14.683077), 15);
 		map.addControl(new GSmallMapControl());
 		map.addControl(new GMapTypeControl());
 		//map.addControl(new GOverviewMapControl());
@@ -105,7 +105,7 @@
 		var northEast = bounds.getNorthEast();
 		var lngSpan = northEast.lng() - southWest.lng();
 		var latSpan = northEast.lat() - southWest.lat();
-		var latlng = new GLatLng(49.4088753,14.6809138);
+		var latlng = new GLatLng(49.4089106,14.683077);
 		map.addOverlay(createMarker(latlng, 0));
 	  }
 	}
