@@ -10,9 +10,16 @@ use	App\Model;
  * Base presenter for all application presenters.
  */
 abstract class BasePresenter extends \App\Presenters\BasePresenter {
-	/*public function beforeRender()
-	{
+
+	/** 
+	* @var Model\Tarifs
+	* @inject
+	*/
+	public $tarifs;		
+	
+	public function beforeRender() {
 		parent::beforeRender();
-		$this->template->posts = $this->posts->getPosts($published='true');
-	}*/
+		$this->template->tarifs = $this->tarifs->getTarifs();
+	}	
+	
 }

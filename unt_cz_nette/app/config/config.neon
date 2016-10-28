@@ -23,4 +23,5 @@ nette:
 
 services:
 	- App\Model\UserManager
+	tarifs: App\Model\Tarifs
 	router: App\RouterFactory::createRouter(@container)

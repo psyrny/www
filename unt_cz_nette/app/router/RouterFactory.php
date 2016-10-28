@@ -20,12 +20,31 @@ class RouterFactory
 	public static function createRouter(\Nette\DI\Container $container)
 	{
 		$router = new RouteList();
+		
+
 		//sitemap
 		$router[] = new Route('sitemap.xml', array(
 			'module' => 'Front',
 			'presenter' => 'Homepage',
 			'action' => 'sitemap'
 		));
+		
+		//admin
+		$router[] = new Route('admin/prihlaseni[/<id>]', array(
+			'module' => 'Admin',
+			'presenter' => 'Sign',
+			'action' => 'in',
+			'id' => NULL,
+		));		
+		
+		$router[] = new Route('admin/<presenter>/<action>[/<id>]', array(
+			'module' => 'Admin',
+			'presenter' => 'Admin',
+			'action' => 'default',
+			'id' => NULL,
+		));		
+		
+		
 
 		//front
 		/*$router[] = new Route('clanek[/<id>]', array(

@@ -1,0 +1,74 @@
+{* Latte template *}
+
+{block pagetitle}Založit nový  tarif{/block}
+
+{block content}
+
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading"><strong>Navigace:</strong> <a class="red-link" n:href="default">zobrazit tarify</a></div>    
+	 
+			<!--{control tarifForm}-->
+			
+			<div class="panel-body">
+			  
+				{form tarifForm class => "form-horizontal"}
+					<div class="form-group ">
+						<label class="control-label col-sm-2 col-lg-1">Název</label>
+						<div class=" col-sm-8 col-lg-6">
+							{input title class => 'form-control', placeholder => "název tarifu", autofocus => 'autofocus'}
+						</div>  
+					</div>	
+					<div class="form-group ">
+						<label class="control-label col-sm-2 col-lg-1">Perex</label>
+						<div class=" col-sm-8 col-lg-6">
+							{input perex class => 'form-control', placeholder => "krátký popis", autofocus => 'autofocus'}
+						</div>
+					</div>		
+					<div class="form-group ">
+						<label class="control-label col-sm-2 col-lg-1">Rychlost</label>
+						<div class=" col-sm-8 col-lg-6">
+							{input speed class => 'form-control', placeholder => "např. 3 MBit", autofocus => 'autofocus'}
+						</div>
+					</div>							
+					<div class="form-group ">
+						<label class="control-label col-sm-2 col-lg-1">Cena</label>
+						<div class=" col-sm-8 col-lg-6">
+							{input price class => 'form-control', placeholder => "např. 250", autofocus => 'autofocus'}
+						</div>
+					</div>	
+					<div class="form-group ">
+						<label class="control-label col-sm-2 col-lg-1">Status</label>
+						<div class=" col-sm-8 col-lg-6">
+							{input status class => 'form-control', autofocus => 'autofocus'}
+						</div>
+					</div>						
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-lg-offset-1 col-sm-10">
+							<div class="checkbox">
+								{input home_1 } &nbsp; 
+								{input home_2}  &nbsp; 
+								{input iptv } 
+							</div>
+						</div>
+					</div>						
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-lg-offset-1 col-sm-8">
+							{input send class => "btn   btn-success"}						
+						</div>
+					</div>						
+				{/form} 
+			  
+			  
+			</div>
+	  
+		</div>  
+		<!-- /.panel -->              
+	</div>  
+	<!-- /.col-lg-12 -->
+</div>  
+<!-- /.row -->	  
+
+

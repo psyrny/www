@@ -19,7 +19,7 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 					'http.context',
 					'security.user',
 					'session.session',
-					'25_App_Forms_SignFormFactory',
+					'tarifs',
 					'26_App_Model_UserManager',
 					'application.1',
 					'application.2',
@@ -27,6 +27,14 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 					'application.4',
 					'application.5',
 					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+					'application.13',
+					'application.14',
 					'container',
 				),
 			),
@@ -71,93 +79,111 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 			'Tracy\ILogger' => array(1 => array('tracy.logger')),
 			'Tracy\BlueScreen' => array(1 => array('tracy.blueScreen')),
 			'Tracy\Bar' => array(1 => array('tracy.bar')),
-			'App\Forms\SignFormFactory' => array(
-				1 => array('25_App_Forms_SignFormFactory'),
-			),
+			'App\Model\Tarifs' => array(1 => array('tarifs')),
 			'Nette\Security\IAuthenticator' => array(1 => array('26_App_Model_UserManager')),
 			'App\Model\UserManager' => array(1 => array('26_App_Model_UserManager')),
+			'App\AdminModule\Presenters\BasePresenter' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+				),
+			),
 			'App\Presenters\BasePresenter' => array(
 				array(
 					'application.1',
+					'application.2',
 					'application.3',
 					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
 				),
 			),
 			'Nette\Application\UI\Presenter' => array(
 				array(
 					'application.1',
+					'application.2',
 					'application.3',
 					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
 				),
 			),
 			'Nette\Application\UI\Control' => array(
 				array(
 					'application.1',
+					'application.2',
 					'application.3',
 					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
 				),
 			),
 			'Nette\Application\UI\PresenterComponent' => array(
 				array(
 					'application.1',
+					'application.2',
 					'application.3',
 					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
 				),
 			),
 			'Nette\ComponentModel\Container' => array(
 				array(
 					'application.1',
+					'application.2',
 					'application.3',
 					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
 				),
 			),
 			'Nette\ComponentModel\Component' => array(
 				array(
 					'application.1',
+					'application.2',
 					'application.3',
 					'application.4',
-				),
-			),
-			'Nette\Application\UI\IRenderable' => array(
-				array(
-					'application.1',
-					'application.3',
-					'application.4',
-				),
-			),
-			'Nette\ComponentModel\IContainer' => array(
-				array(
-					'application.1',
-					'application.3',
-					'application.4',
-				),
-			),
-			'Nette\ComponentModel\IComponent' => array(
-				array(
-					'application.1',
-					'application.3',
-					'application.4',
-				),
-			),
-			'Nette\Application\UI\ISignalReceiver' => array(
-				array(
-					'application.1',
-					'application.3',
-					'application.4',
-				),
-			),
-			'Nette\Application\UI\IStatePersistent' => array(
-				array(
-					'application.1',
-					'application.3',
-					'application.4',
-				),
-			),
-			'ArrayAccess' => array(
-				array(
-					'application.1',
-					'application.3',
-					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
 				),
 			),
 			'Nette\Application\IPresenter' => array(
@@ -168,25 +194,155 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 					'application.4',
 					'application.5',
 					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+					'application.13',
+					'application.14',
 				),
 			),
-			'App\Presenters\Error4xxPresenter' => array(array('application.1')),
-			'App\Presenters\ErrorPresenter' => array(array('application.2')),
-			'App\Presenters\HomepagePresenter' => array(array('application.3')),
-			'App\Presenters\SignPresenter' => array(array('application.4')),
-			'NetteModule\ErrorPresenter' => array(array('application.5')),
-			'NetteModule\MicroPresenter' => array(array('application.6')),
+			'ArrayAccess' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+				),
+			),
+			'Nette\Application\UI\IStatePersistent' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+				),
+			),
+			'Nette\Application\UI\ISignalReceiver' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+				),
+			),
+			'Nette\ComponentModel\IComponent' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+				),
+			),
+			'Nette\ComponentModel\IContainer' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+				),
+			),
+			'Nette\Application\UI\IRenderable' => array(
+				array(
+					'application.1',
+					'application.2',
+					'application.3',
+					'application.4',
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+					'application.12',
+				),
+			),
+			'App\AdminModule\Presenters\AdminPresenter' => array(array('application.1')),
+			'App\AdminModule\Presenters\DashboardPresenter' => array(array('application.2')),
+			'App\AdminModule\Presenters\HometarifPresenter' => array(array('application.3')),
+			'App\AdminModule\Presenters\SignPresenter' => array(array('application.4')),
+			'App\FrontModule\Presenters\BasePresenter' => array(
+				array(
+					'application.5',
+					'application.6',
+					'application.7',
+					'application.8',
+					'application.9',
+					'application.10',
+					'application.11',
+				),
+			),
+			'App\FrontModule\Presenters\HomepagePresenter' => array(array('application.5')),
+			'App\FrontModule\Presenters\InternettvPresenter' => array(array('application.6')),
+			'App\FrontModule\Presenters\KestazeniPresenter' => array(array('application.7')),
+			'App\FrontModule\Presenters\KontaktPresenter' => array(array('application.8')),
+			'App\FrontModule\Presenters\ObchodnipodminkyPresenter' => array(array('application.9')),
+			'App\FrontModule\Presenters\ProdejaservisPresenter' => array(array('application.10')),
+			'App\FrontModule\Presenters\ProfirmyPresenter' => array(array('application.11')),
+			'App\Presenters\ErrorPresenter' => array(array('application.12')),
+			'NetteModule\ErrorPresenter' => array(array('application.13')),
+			'NetteModule\MicroPresenter' => array(array('application.14')),
 			'Nette\DI\Container' => array(1 => array('container')),
 		),
 		'services' => array(
-			'25_App_Forms_SignFormFactory' => 'App\Forms\SignFormFactory',
 			'26_App_Model_UserManager' => 'App\Model\UserManager',
-			'application.1' => 'App\Presenters\Error4xxPresenter',
-			'application.2' => 'App\Presenters\ErrorPresenter',
-			'application.3' => 'App\Presenters\HomepagePresenter',
-			'application.4' => 'App\Presenters\SignPresenter',
-			'application.5' => 'NetteModule\ErrorPresenter',
-			'application.6' => 'NetteModule\MicroPresenter',
+			'application.1' => 'App\AdminModule\Presenters\AdminPresenter',
+			'application.10' => 'App\FrontModule\Presenters\ProdejaservisPresenter',
+			'application.11' => 'App\FrontModule\Presenters\ProfirmyPresenter',
+			'application.12' => 'App\Presenters\ErrorPresenter',
+			'application.13' => 'NetteModule\ErrorPresenter',
+			'application.14' => 'NetteModule\MicroPresenter',
+			'application.2' => 'App\AdminModule\Presenters\DashboardPresenter',
+			'application.3' => 'App\AdminModule\Presenters\HometarifPresenter',
+			'application.4' => 'App\AdminModule\Presenters\SignPresenter',
+			'application.5' => 'App\FrontModule\Presenters\HomepagePresenter',
+			'application.6' => 'App\FrontModule\Presenters\InternettvPresenter',
+			'application.7' => 'App\FrontModule\Presenters\KestazeniPresenter',
+			'application.8' => 'App\FrontModule\Presenters\KontaktPresenter',
+			'application.9' => 'App\FrontModule\Presenters\ObchodnipodminkyPresenter',
 			'application.application' => 'Nette\Application\Application',
 			'application.linkGenerator' => 'Nette\Application\LinkGenerator',
 			'application.presenterFactory' => 'Nette\Application\IPresenterFactory',
@@ -209,6 +365,7 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 			'security.user' => 'Nette\Security\User',
 			'security.userStorage' => 'Nette\Security\IUserStorage',
 			'session.session' => 'Nette\Http\Session',
+			'tarifs' => 'App\Model\Tarifs',
 			'tracy.bar' => 'Tracy\Bar',
 			'tracy.blueScreen' => 'Tracy\BlueScreen',
 			'tracy.logger' => 'Tracy\ILogger',
@@ -216,19 +373,35 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 		'tags' => array(
 			'inject' => array(
 				'application.1' => TRUE,
+				'application.10' => TRUE,
+				'application.11' => TRUE,
+				'application.12' => TRUE,
+				'application.13' => TRUE,
+				'application.14' => TRUE,
 				'application.2' => TRUE,
 				'application.3' => TRUE,
 				'application.4' => TRUE,
 				'application.5' => TRUE,
 				'application.6' => TRUE,
+				'application.7' => TRUE,
+				'application.8' => TRUE,
+				'application.9' => TRUE,
 			),
 			'nette.presenter' => array(
-				'application.1' => 'App\Presenters\Error4xxPresenter',
-				'application.2' => 'App\Presenters\ErrorPresenter',
-				'application.3' => 'App\Presenters\HomepagePresenter',
-				'application.4' => 'App\Presenters\SignPresenter',
-				'application.5' => 'NetteModule\ErrorPresenter',
-				'application.6' => 'NetteModule\MicroPresenter',
+				'application.1' => 'App\AdminModule\Presenters\AdminPresenter',
+				'application.10' => 'App\FrontModule\Presenters\ProdejaservisPresenter',
+				'application.11' => 'App\FrontModule\Presenters\ProfirmyPresenter',
+				'application.12' => 'App\Presenters\ErrorPresenter',
+				'application.13' => 'NetteModule\ErrorPresenter',
+				'application.14' => 'NetteModule\MicroPresenter',
+				'application.2' => 'App\AdminModule\Presenters\DashboardPresenter',
+				'application.3' => 'App\AdminModule\Presenters\HometarifPresenter',
+				'application.4' => 'App\AdminModule\Presenters\SignPresenter',
+				'application.5' => 'App\FrontModule\Presenters\HomepagePresenter',
+				'application.6' => 'App\FrontModule\Presenters\InternettvPresenter',
+				'application.7' => 'App\FrontModule\Presenters\KestazeniPresenter',
+				'application.8' => 'App\FrontModule\Presenters\KontaktPresenter',
+				'application.9' => 'App\FrontModule\Presenters\ObchodnipodminkyPresenter',
 			),
 		),
 		'aliases' => array(
@@ -270,16 +443,6 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 
 
 	/**
-	 * @return App\Forms\SignFormFactory
-	 */
-	public function createService__25_App_Forms_SignFormFactory()
-	{
-		$service = new App\Forms\SignFormFactory($this->getService('security.user'));
-		return $service;
-	}
-
-
-	/**
 	 * @return App\Model\UserManager
 	 */
 	public function createService__26_App_Model_UserManager()
@@ -290,14 +453,45 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 
 
 	/**
-	 * @return App\Presenters\Error4xxPresenter
+	 * @return App\AdminModule\Presenters\AdminPresenter
 	 */
 	public function createServiceApplication__1()
 	{
-		$service = new App\Presenters\Error4xxPresenter;
+		$service = new App\AdminModule\Presenters\AdminPresenter;
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\ProdejaservisPresenter
+	 */
+	public function createServiceApplication__10()
+	{
+		$service = new App\FrontModule\Presenters\ProdejaservisPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\ProfirmyPresenter
+	 */
+	public function createServiceApplication__11()
+	{
+		$service = new App\FrontModule\Presenters\ProfirmyPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -306,37 +500,12 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 	/**
 	 * @return App\Presenters\ErrorPresenter
 	 */
-	public function createServiceApplication__2()
+	public function createServiceApplication__12()
 	{
-		$service = new App\Presenters\ErrorPresenter($this->getService('tracy.logger'));
-		return $service;
-	}
-
-
-	/**
-	 * @return App\Presenters\HomepagePresenter
-	 */
-	public function createServiceApplication__3()
-	{
-		$service = new App\Presenters\HomepagePresenter;
+		$service = new App\Presenters\ErrorPresenter;
 		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
 			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
 			$this->getService('security.user'), $this->getService('latte.templateFactory'));
-		$service->invalidLinkMode = 5;
-		return $service;
-	}
-
-
-	/**
-	 * @return App\Presenters\SignPresenter
-	 */
-	public function createServiceApplication__4()
-	{
-		$service = new App\Presenters\SignPresenter;
-		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
-			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
-			$this->getService('security.user'), $this->getService('latte.templateFactory'));
-		$service->factory = $this->getService('25_App_Forms_SignFormFactory');
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -345,7 +514,7 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 	/**
 	 * @return NetteModule\ErrorPresenter
 	 */
-	public function createServiceApplication__5()
+	public function createServiceApplication__13()
 	{
 		$service = new NetteModule\ErrorPresenter($this->getService('tracy.logger'));
 		return $service;
@@ -355,9 +524,129 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 	/**
 	 * @return NetteModule\MicroPresenter
 	 */
-	public function createServiceApplication__6()
+	public function createServiceApplication__14()
 	{
 		$service = new NetteModule\MicroPresenter($this, $this->getService('http.request'), $this->getService('routing.router'));
+		return $service;
+	}
+
+
+	/**
+	 * @return App\AdminModule\Presenters\DashboardPresenter
+	 */
+	public function createServiceApplication__2()
+	{
+		$service = new App\AdminModule\Presenters\DashboardPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\AdminModule\Presenters\HometarifPresenter
+	 */
+	public function createServiceApplication__3()
+	{
+		$service = new App\AdminModule\Presenters\HometarifPresenter($this->getService('database.default.context'));
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\AdminModule\Presenters\SignPresenter
+	 */
+	public function createServiceApplication__4()
+	{
+		$service = new App\AdminModule\Presenters\SignPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\HomepagePresenter
+	 */
+	public function createServiceApplication__5()
+	{
+		$service = new App\FrontModule\Presenters\HomepagePresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\InternettvPresenter
+	 */
+	public function createServiceApplication__6()
+	{
+		$service = new App\FrontModule\Presenters\InternettvPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\KestazeniPresenter
+	 */
+	public function createServiceApplication__7()
+	{
+		$service = new App\FrontModule\Presenters\KestazeniPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\KontaktPresenter
+	 */
+	public function createServiceApplication__8()
+	{
+		$service = new App\FrontModule\Presenters\KontaktPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
+		return $service;
+	}
+
+
+	/**
+	 * @return App\FrontModule\Presenters\ObchodnipodminkyPresenter
+	 */
+	public function createServiceApplication__9()
+	{
+		$service = new App\FrontModule\Presenters\ObchodnipodminkyPresenter;
+		$service->injectPrimary($this, $this->getService('application.presenterFactory'), $this->getService('routing.router'),
+			$this->getService('http.request'), $this->getService('http.response'), $this->getService('session.session'),
+			$this->getService('security.user'), $this->getService('latte.templateFactory'));
+		$service->tarifs = $this->getService('tarifs');
+		$service->invalidLinkMode = 5;
 		return $service;
 	}
 
@@ -436,7 +725,7 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 	 */
 	public function createServiceDatabase__default__connection()
 	{
-		$service = new Nette\Database\Connection('mysql:host=127.0.0.1;dbname=test', NULL, NULL, array('lazy' => TRUE));
+		$service = new Nette\Database\Connection('mysql:host=127.0.0.1;dbname=unt_cz', 'root', NULL, array('lazy' => TRUE));
 		$this->getService('tracy.blueScreen')->addPanel('Nette\Bridges\DatabaseTracy\ConnectionPanel::renderException');
 		Nette\Database\Helpers::createDebugPanel($service, TRUE, 'default');
 		return $service;
@@ -569,7 +858,7 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 	 */
 	public function createServiceRouting__router()
 	{
-		$service = App\RouterFactory::createRouter();
+		$service = App\RouterFactory::createRouter($this);
 		if (!$service instanceof Nette\Application\IRouter) {
 			throw new Nette\UnexpectedValueException('Unable to create service \'routing.router\', value returned by factory is not Nette\Application\IRouter type.');
 		}
@@ -605,6 +894,16 @@ class Container_ae8a7240d7 extends Nette\DI\Container
 	{
 		$service = new Nette\Http\Session($this->getService('http.request'), $this->getService('http.response'));
 		$service->setExpiration('14 days');
+		return $service;
+	}
+
+
+	/**
+	 * @return App\Model\Tarifs
+	 */
+	public function createServiceTarifs()
+	{
+		$service = new App\Model\Tarifs($this->getService('database.default.context'));
 		return $service;
 	}
 
