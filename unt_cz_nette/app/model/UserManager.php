@@ -27,6 +27,7 @@ class UserManager extends Nette\Object implements Nette\Security\IAuthenticator
 	public function __construct(Nette\Database\Context $database) {
 		$this->database = $database;
 		//$this->add('petr.syrny@kulturne.com','kolotoc78');
+		//$this->add('unt@unt.cz','Dvořáčková');
 	}
 
 

@@ -2,8 +2,8 @@ parameters:
 
 
 database:
-	dsn: 'mysql:host=localhost;dbname=c1mafiacars'
-	user: c1CarS
-	password: UwV7WMnXkY9W5Z
+	dsn: 'mysql:host=localhost;dbname=unt.cz'
+	user: untcz.ta
+	password: untPTcz16
 	options:
 		lazy: yes
